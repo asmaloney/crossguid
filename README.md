@@ -5,6 +5,10 @@ native GUID/UUID generator on the given platform and has a generic class for
 parsing, stringifying, and comparing IDs. The guid generation technique is
 determined by your platform:
 
+## Forked by asmaloney
+
+This was forked from https://github.com/graeme-hill/crossguid @ [b151b7d](https://github.com/graeme-hill/crossguid/commit/b151b7d1aeb68c4b9e98a8a2e0a547885aa0b60c) because Graeme chose to make it require C++17. This fork has the same functionality but only requires C++11.
+
 ## Linux
 
 On linux you can use `libuuid` which is pretty standard. On distros like Ubuntu
