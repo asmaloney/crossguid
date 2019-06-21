@@ -44,6 +44,11 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
     set(WARNINGS "-Werror" "-Wall")
 elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     set(WARNINGS "-Werror" "-Wall")
+    if (APPLE)
+      # Xcode 10 started treating the swap template specialization in the cpp as
+      # an unused function and causing an error, so turn off the warning
+      list(APPEND WARNINGS "-Wno-unused-function")
+    endif()
 elseif(MSVC)
     set(WARNINGS "/WX" "/W4")
 endif()
