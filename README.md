@@ -1,13 +1,22 @@
-# CrossGuid [![Build Status](https://travis-ci.org/asmaloney/crossguid.svg?branch=master)](https://travis-ci.org/asmaloney/crossguid)
+[![Build Status](https://travis-ci.org/asmaloney/crossguid.svg?branch=master)](https://travis-ci.org/asmaloney/crossguid)
+
+### Forked 20 June 2019
+
+This was forked by [asmaloney](https://github.com/asmaloney) from https://github.com/graeme-hill/crossguid @ [b151b7d](https://github.com/graeme-hill/crossguid/commit/b151b7d1aeb68c4b9e98a8a2e0a547885aa0b60c) because Graeme chose to make the library require C++17.
+
+This fork only requires **C++11**.
+
+Changes:
+* cherry picked commits which don't require C++17 from upstream (and will continue to do so if they make sense)
+* [rewrote the Travis CI](https://github.com/asmaloney/crossguid/commit/9641e9b19228747617795f32261907737b319d1b) to handle more combinations of compiler/OS
+* [fixed compilation on Xcode 10](https://github.com/asmaloney/crossguid/commit/a495080d690facfdaad1229fbc2387191fa95113)
+
+# CrossGuid
 
 CrossGuid is a minimal, cross platform, C++ GUID library. It uses the best
 native GUID/UUID generator on the given platform and has a generic class for
 parsing, stringifying, and comparing IDs. The guid generation technique is
 determined by your platform:
-
-## Forked by asmaloney
-
-This was forked from https://github.com/graeme-hill/crossguid @ [b151b7d](https://github.com/graeme-hill/crossguid/commit/b151b7d1aeb68c4b9e98a8a2e0a547885aa0b60c) because Graeme chose to make it require C++17. This fork has the same functionality but only requires C++11.
 
 ## Linux
 
