@@ -1,4 +1,4 @@
-# CrossGuid [![Build Status](https://travis-ci.org/graeme-hill/crossguid.svg?branch=master)](https://travis-ci.org/graeme-hill/crossguid)
+# CrossGuid [![Build Status](https://travis-ci.org/asmaloney/crossguid.svg?branch=master)](https://travis-ci.org/asmaloney/crossguid)
 
 CrossGuid is a minimal, cross platform, C++ GUID library. It uses the best
 native GUID/UUID generator on the given platform and has a generic class for
